@@ -6,6 +6,7 @@ if num in range(-1,0):
 elif num==0:
     print("The factorial of zero is 1 ")
 else:
+    print("The factorial of",num, "is")
     for i in range(1,num+1):
         factorial=factorial*i
-        print("The factorial of",num,"is",factorial)
+        print( factorial )
