@@ -1,11 +1,12 @@
-start_point=int(input("Enter the start point:"))
-end_point=int(input("Enter the end point:"))
-n=1
+cube=0
 sum=0
-while n<=end_point:
-    sum=sum+n*n*n
-    avg=sum/((end_point+1)-start_point)
-    print("cube of ", n , "is" , n*n*n)
-    n=n+1
-    print("sum is",sum)
-    print("avg is",avg)
+average=0
+print("please enter 10 numbers")
+for i in range(1,11):
+    num=int(input("Number%d= "%i))
+    cube=num*num*num
+    print("cube is ", cube)
+    sum=sum+cube
+    print("Sum is ",sum)
+    average=sum/num
+    print("Average is ",average)
